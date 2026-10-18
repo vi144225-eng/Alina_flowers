@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
 }
 
-/* Напис над квітами */
+/* Напис над квітами 
 body::before {
   content: "You are beautiful";
   display: block;
@@ -25,6 +25,7 @@ body::before {
   z-index: 10;
   pointer-events: none;
 }
+*/
 
 /* Контейнер із квітами */
 .container {
