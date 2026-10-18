@@ -1,39 +1,54 @@
+/* Основні налаштування сторінки */
 body {
   background: #131b21;
-}
-body::before {
-  content: "You are beautiful";
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Arial', sans-serif;
-  font-size: 24px;
-  color: #d89fc9;
-  z-index: 10;
-  pointer-events: none;
-  text-align: center;
-  font-weight: bold;
-  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
+/* Напис над квітами */
+body::before {
+  content: "You are beautiful";
+  display: block;
+  position: relative;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #d89fc9;
+
+  text-align: center;
+  font-weight: bold;
+
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Контейнер із квітами */
 .container {
-  width: 50%;
+  width: 90%;
+  max-width: 650px;
   margin: 0 auto;
 }
 
+/* SVG-анімація квітів */
 svg#flower-frame {
-  height: 90vh;
+  height: 75vh;
   width: 100%;
+  display: block;
 }
 
+/* Нижній текст */
 .footer {
   text-align: center;
   position: absolute;
   bottom: 10px;
   width: 100%;
-  font-family: 'Arial', sans-serif;
-  color: #d89fc9; /* Muted pink */
+
+  font-family: Arial, sans-serif;
+  color: #d89fc9;
   font-size: 14px;
   opacity: 0.8;
 }
@@ -42,6 +57,7 @@ svg#flower-frame {
   margin: 0;
 }
 
+/* Елементи анімації, приховані до запуску */
 #Footer_group_1_,
 [id^=PinkFlowerGroup],
 [id^=BaseGroup] path,
